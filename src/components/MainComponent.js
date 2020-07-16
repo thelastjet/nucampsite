@@ -14,9 +14,9 @@ const mapStateToProps = state => {
         campsites: state.campsites,
         comments: state.comments,
         partners: state.partners,
-        promotion: state.promotions
-    }
-}
+Intro        promotions: state.promotions
+    };
+};
 
 class Main extends Component {
     
@@ -30,7 +30,7 @@ class Main extends Component {
                     partner={this.props.partners.filter(partner => partner.featured)[0]}
                 />
             );
-        }
+        };
 
 
         const CampsiteWithId = ({match}) => {
@@ -40,7 +40,7 @@ class Main extends Component {
                     comments={this.props.comments.filter(comment => comment.campsiteId === +match.params.campsiteId)}
                 />
             );
-        }
+        };
 
 
         return (
@@ -57,7 +57,7 @@ class Main extends Component {
                 <Footer />
             </div>
         );
-    };
+    }
 }
 
 export default withRouter(connect(mapStateToProps)(Main));
