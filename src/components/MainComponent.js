@@ -14,7 +14,7 @@ const mapStateToProps = state => {
         campsites: state.campsites,
         comments: state.comments,
         partners: state.partners,
-Intro        promotions: state.promotions
+        promotions: state.promotions
     };
 };
 
