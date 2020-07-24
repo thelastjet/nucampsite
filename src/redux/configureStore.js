@@ -7,7 +7,7 @@ import { Promotions } from './promotions';
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
-            campsties: Campsites,
+            campsites: Campsites,
             comments: Comments,
             partners: Partners,
             promotions: Promotions
@@ -15,4 +15,4 @@ export const ConfigureStore = () => {
     );
 
     return store;
-};
+}
